@@ -1,0 +1,64 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   CollabX
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   @keyframes popIn {
+    0% {
+     opacity: 0;
+     transform: scale(0.5);
+    }
+    100% {
+     opacity: 1;
+     transform: scale(1);
+    }
+   }
+   .pop-in {
+    animation: popIn 1s ease-in-out;
+   }
+  </style>
+ </head>
+ <body class="font-roboto bg-gray-900 text-white">
+  <header class="flex justify-between items-center p-4">
+   <div class="flex items-center">
+    <i class="fas fa-bars text-2xl mr-4">
+    </i>
+   </div>
+   <nav class="hidden md:flex space-x-4">
+   </nav>
+   <div class="flex items-center space-x-4">
+    <i class="fas fa-bell text-xl">
+    </i>
+    <i class="fas fa-user-circle text-xl">
+    </i>
+    <button class="border border-white px-4 py-2 rounded">
+     Profile
+    </button>
+   </div>
+  </header>
+  <main class="relative h-screen flex items-center justify-center">
+   <img alt="Smiling person working on a computer" class="absolute inset-0 w-full h-full object-cover opacity-50" height="1080" src="https://storage.googleapis.com/a1aa/image/SucQbhunIrW1NtCCh_PpkUWRtIib5wgQ3XoSiXCafMM.jpg" width="1920"/>
+   <div class="relative z-10 text-center">
+    <div class="text-8xl font-bold mb-12 pop-in text-red-500">
+     CollabX
+    </div>
+    <h1 class="text-5xl md:text-6xl font-bold mb-4">
+     Matching the Perfect Profiles for Projects
+    </h1>
+    <p class="text-lg md:text-xl mb-6">
+     Use our platform to find the ideal match for your project based on experience, skills, and more.
+    </p>
+    <button class="bg-red-500 text-white px-6 py-3 rounded-full text-lg">
+     Get Started
+    </button>
+   </div>
+  </main>
+ </body>
+</html>
